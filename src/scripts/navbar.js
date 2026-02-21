@@ -1,6 +1,6 @@
-import alertHome from "./home.js";
-import alertAbout from "./about.js";
-import alertMenu from "./menu.js";
+import loadHome from "./home.js";
+import loadAbout from "./about.js";
+import loadMenu from "./menu.js";
 
 export default class NavBar {
   constructor() {
@@ -10,7 +10,7 @@ export default class NavBar {
     this.links = document.querySelectorAll(".nav__link");
 
     if (this.mobile && this.hamburger && this.closeBtn && this.links.length) {
-      this.onClick();
+      this.onClick(); 
     }
   }
 
