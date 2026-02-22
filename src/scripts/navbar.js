@@ -10,8 +10,16 @@ export default class NavBar {
     this.links = document.querySelectorAll(".nav__link");
 
     if (this.mobile && this.hamburger && this.closeBtn && this.links.length) {
-      this.onClick(); 
+      this.init();
     }
+  }
+
+  init() {
+    const homeBtn = document.createElement("button");
+    homeBtn.dataset.page = "home";
+
+    this.onClick();
+    this.handlePage(homeBtn);
   }
 
   onClick() {

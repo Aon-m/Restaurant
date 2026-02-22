@@ -131,8 +131,7 @@
         </nav>
       </dialog>
     </header>
-    <main id="content">
-    </main>
+    <main id="content"></main>
     <template id="card-template">
       <div class="card">
         <div class="card__content">
@@ -157,7 +156,11 @@
             </button>
           </div>
           <picture class="card__image picture">
-            <img class="picture__img card__image" data-src="../assets/images/default.jpg" alt="" />
+            <img
+              class="picture__img card__image"
+              data-src="../assets/images/default.jpg"
+              alt=""
+            />
           </picture>
           <div class="card__text-content">
             <p
@@ -170,6 +173,88 @@
           </div>
         </div>
       </div>
+    </template>
+    <template id="home-template">
+      <section class="container">
+        <h1>Welcome to E-Cafe</h1>
+        <button data-page="menu" class="container__link" type="button">
+          View Menu
+        </button>
+
+        <button data-page="about" class="container__link" type="button">
+          More about us
+        </button>
+
+        <svg class="container__decoration"></svg>
+
+        <div class="container__sub-container">
+          <div class="card">
+            <img class="card__image" alt="" />
+            <div class="card__text-content">
+              <h2 class="card__title">Location</h2>
+              <p class="card__description">...</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" alt="" />
+            <div class="card__text-content">
+              <h2 class="card__title">Opening hours</h2>
+              <p class="card__description">...</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card__image" alt="" />
+            <div class="card__text-content">
+              <h2 class="card__title">Contact Us</h2>
+              <p class="card__description">...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </template>
+    <template id="about-template">
+      <section>
+        <div class="container__text-content">
+          <h2 class="text">Mission</h2>
+          <p class="text">...</p>
+        </div>
+        <div class="container__subcontainer">
+          <h2>Meet the team</h2>
+
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__text-content">
+              <h2>Chef</h2>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__text-content">
+              <h2>Assitant Cheft</h2>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__text-content">
+              <h2>Waiter</h2>
+              <p>...</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__image"></div>
+            <div class="card__text-content">
+              <h2>Cashier</h2>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+        <div class="container__text-content">
+          <h2 class="text">Values</h2>
+          <p class="text">...</p>
+        </div>
+      </section>
     </template>
   </body>
 </html>

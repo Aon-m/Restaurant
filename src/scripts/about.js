@@ -1,8 +1,6 @@
 export default function loadAbout() {
-  const section = document.createElement("section");
-  section.classList.add("container");
-
-  section.innerHTML = ``;
+  const template = document.querySelector("#about-template");
+  const section = template.content.cloneNode(true);
 
   return section;
 }
