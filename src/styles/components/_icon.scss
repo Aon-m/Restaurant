@@ -1,0 +1,19 @@
+.icon {
+  color: var(--color-neutral-0);
+  height: auto;
+
+  &--small {
+    width: var(--size-sm);
+  }
+  &--medium {
+    width: var(--size-md);
+  }
+  &--large {
+    width: var(--size-lg);
+  }
+
+  &--bold {
+    stroke: initial;
+    stroke-width: 0.2rem;
+  }
+}

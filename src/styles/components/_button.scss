@@ -1,0 +1,47 @@
+@use "../abstracts/mixins" as m;
+
+.button {
+  background: transparent;
+  text-decoration: none;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+  transition: 500ms ease;
+
+  &:hover {
+    transition: 200ms ease;
+  }
+
+  &--primary {
+    background: var(--color-accent-4);
+    color: var(--color-neutral-8);
+
+    &:hover {
+      background: var(--color-accent-0);
+    }
+  }
+  &--secondary {
+    background: var(--color-accent-3);
+    color: var(--color-neutral-8);
+
+    &:hover {
+      background: var(--color-accent-2);
+    }
+  }
+
+  &--rectangle {
+    padding: calc(var(--size-xs) + 0.3rem) calc(var(--size-sm) - 0.3rem);
+    border-radius: var(--size-sm);
+
+    @media screen and (min-width: 65rem) {
+      padding: var(--size-xs) calc(var(--size-sm) - 0.5rem);
+    }
+  }
+  &--circle {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}

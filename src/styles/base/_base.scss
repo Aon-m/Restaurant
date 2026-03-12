@@ -1,17 +1,11 @@
 :root {
   /* Colors */
-  /* Accent colors */
-  --color-accent-0: hsl(155, 40%, 62%); /* mint */
-  --color-accent-1: hsl(170, 42%, 58%); /* teal */
-  --color-accent-2: hsl(45, 75%, 65%); /* amber */
-  --color-accent-3: hsl(265, 50%, 67%); /* violet */
-
-  /* Fun Colors */
-  --color-fun-0: hsl(330, 65%, 68%); /* pink */
-  --color-fun-1: hsl(15, 80%, 70%); /* peach */
-  --color-fun-2: hsl(85, 55%, 62%); /* lime */
-  --color-fun-3: hsl(195, 55%, 60%); /* sky */
-  --color-fun-4: hsl(280, 60%, 70%); /* lavender */
+  /* Accent Colors */
+  --color-accent-0: hsl(330, 65%, 68%); /* pink */
+  --color-accent-1: hsl(15, 80%, 70%); /* peach */
+  --color-accent-2: hsl(85, 55%, 62%); /* lime */
+  --color-accent-3: hsl(195, 55%, 60%); /* sky */
+  --color-accent-4: hsl(280, 60%, 70%); /* lavender */
 
   /* Neutral colors */
   --color-neutral-0: hsl(0, 0%, 100%);
@@ -39,7 +33,7 @@
   /* Font sizes */
   --fs-sm: clamp(1rem, calc(0.8rem + 0.7vw), 1.3rem);
   --fs-md: clamp(1.5rem, calc(1.3rem + 1vw), 2rem);
-  --fs-lg: clamp(2rem, calc(1.8rem + 1.2vw), 3rem);
+  --fs-lg: clamp(2rem, calc(1.8rem + 1.5vw), 4rem);
   --fs-xl: clamp(4rem, calc(4rem + 3vw), 10rem);
 
   /* Font weights */

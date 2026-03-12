@@ -28,8 +28,7 @@ header {
       left: 0;
       width: 100%;
       height: 100%;
-      background: var(--color-neutral-8);
-      opacity: 0.3;
+      background: transparent;
       z-index: -1;
     }
   }
@@ -42,14 +41,15 @@ header {
     background: none;
 
     &::backdrop {
-      background: rgba(0, 0, 0, 0.6);
+      background: var(--color-neutral-8);
+      opacity: 0.6;
     }
   }
 
   &__hamburger {
     order: -1;
     position: absolute;
-    right: var(--size-sm);
+    right: var(--size-md);
     cursor: pointer;
     border: none;
     background: transparent;
@@ -63,9 +63,10 @@ header {
 
   &__link {
     letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-block: calc(var(--size-smer) + 0.5rem);
+    padding-block: calc(var(--size-sm) - 0.5rem);
+    background: transparent;
+    border: none;
+    text-shadow: 0 0 0.2rem var(--color-neutral-0);
   }
 
   &__index {
@@ -73,35 +74,36 @@ header {
   }
 
   &__top {
-    @include m.flex(row, center, space-between);
+    @include m.flex(row);
     width: 100%;
   }
 
   &__logo {
-    width: 2rem;
     height: auto;
     color: var(--color-neutral-0);
+    text-shadow: 0 0 0.2rem var(--color-neutral-0);
   }
 
   &__item {
-    list-style: none;
     @include m.flex(row, center);
+    list-style: none;
     width: 100%;
     text-align: center;
-    border-block-end: 0.05rem solid var(--color-neutral-3);
+    border-block-end: 0.05rem solid var(--color-neutral-4);
 
     &:first-of-type {
-      border-block: 0.05rem solid var(--color-neutral-3);
+      border-block: 0.05rem solid var(--color-neutral-4);
     }
   }
 
   &__close-button {
     background: none;
     border: none;
-    width: var(--size-smer);
-    font-size: var(--size-font-md);
+    font-size: var(--fs-lg);
     color: var(--color-neutral-0);
     cursor: pointer;
+    position: absolute;
+    right: var(--size-md);
   }
 
   &__decoration {
@@ -132,7 +134,6 @@ header {
 
     &__logo {
       margin-inline: var(--size-md);
-      width: 10rem;
     }
 
     &__links {
@@ -141,6 +142,8 @@ header {
       position: relative;
       width: auto;
       padding-inline: var(--size-md);
+      border-radius: 0 0 0 var(--size-sm);
+      overflow: hidden;
 
       &:before {
         content: "";
@@ -156,8 +159,6 @@ header {
     }
 
     &__item {
-      border-block-end: none;
-
       &:first-of-type {
         border-block: none;
       }
@@ -166,7 +167,7 @@ header {
     &__link {
       @include m.flex(row);
       gap: 0.25rem;
-      padding-block: var(--size-smer);
+      border-block-end: 0.3rem solid transparent;
     }
 
     &__decoration {
@@ -193,6 +194,7 @@ header {
       margin: var(--size-sm) 0;
       padding-inline: calc(var(--size-lg) + 1rem);
       gap: var(--size-md);
+      border-radius: 10rem 0 0 10rem;
     }
 
     &__link {

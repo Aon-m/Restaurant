@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as m;
+
+.newsletter {
+  background: var(--color-neutral-0);
+
+  &__form {
+    @include m.flex(column);
+    width: 100%;
+    gap: var(--size-xs);
+  }
+
+  &__labels {
+    @include m.flex(row, space-between);
+    width: 100%;
+    font-size: calc(var(--fs-sm) - 0.2rem);
+  }
+
+  &__label {
+    margin-inline-end: auto;
+  }
+
+  &__input {
+    padding: calc(var(--size-xs) + 0.3rem);
+    padding-inline-start: calc(var(--size-xs) + 0.5rem);
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--color-neutral-5);
+    width: 100%;
+    cursor: pointer;
+
+    &::placeholder {
+      color: var(--color-neutral-5);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__input-wrapper {
+    border-radius: 0.3rem;
+    width: 100%;
+    margin-block-end: 0.5rem;
+  }
+}

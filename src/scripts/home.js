@@ -6,22 +6,21 @@ export default function loadHome() {
   const section = template.content.cloneNode(true);
 
   const buttons = section.querySelectorAll(".container__link");
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => handlePage(btn));
+  buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      handlePage(btn);
+    });
   });
 
   return section;
 }
 
 function handlePage(btn) {
-  const content = document.querySelector("#content");
   const page = btn.dataset.page;
 
-  const routes = {
-    about: loadAbout,
-    menu: loadMenu,
-  };
-
-  content.innerHTML = "";
-  content.appendChild(routes[page]?.());
+  if (page === "menu") {
+    document.querySelectorAll(`[data-page="menu"`)[0].click();
+  } else if (page === "about") {
+    document.querySelectorAll(`[data-page="about"`)[0].click();
+  }
 }

@@ -168,5 +168,32 @@
       "rating": 4,
       "category": "Light Meal"
     }
+  ],
+  "crew": [
+    {
+      "role": "Chef",
+      "name": "Antony",
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit culpa libero accusantium possimus autem sint nesciunt."
+    },
+    {
+      "role": "Assistant-Chef",
+      "name": "Mary",
+      "bio": "Inventore, veritatis, quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus."
+    },
+    {
+      "role": "Waiter 1",
+      "name": "Timmy",
+      "bio": "Praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint illum."
+    },
+    {
+      "role": "Waiter 2",
+      "name": "Joe",
+      "bio": "Soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint nesciunt quam sequi? Ut, illum."
+    },
+    {
+      "role": "Cashier",
+      "name": "Dora",
+      "bio": "Consectetur adipisicing elit quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa."
+    }
   ]
 }

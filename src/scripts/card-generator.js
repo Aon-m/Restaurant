@@ -48,9 +48,17 @@ class CardGenerator {
 
     const clone = this.template.content.cloneNode(true);
 
+    const ratings = {
+      1: "⭐",
+      2: "⭐⭐",
+      3: "⭐⭐⭐",
+      4: "⭐⭐⭐⭐",
+      5: "⭐⭐⭐⭐⭐",
+    };
+
     const cardName = item.name,
       cardPrice = item.price,
-      cardRating = item.rating,
+      cardRating = ratings[item.rating],
       cardImage = item.image,
       cardCategory = item.category;
     clone.querySelector(".card__name").textContent = cardName;

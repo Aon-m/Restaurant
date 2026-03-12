@@ -12,7 +12,7 @@
 
       <!-- Logo -->
       <svg
-        class="nav__logo"
+        class="nav__logo icon icon--medium"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -960 960 960"
         fill="currentColor"
@@ -40,31 +40,31 @@
 
       <nav class="nav nav--desktop">
         <ul class="nav__links text text--small">
-          <li class="nav__item">
+          <li class="nav__item underline-hover underline-hover--selected">
             <button
               data-page="home"
               type="button"
-              class="nav__link text text--small fast-slow-hover"
+              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">00</span>
               Home
             </button>
           </li>
-          <li class="nav__item">
+          <li class="nav__item underline-hover">
             <button
               data-page="menu"
               type="button"
-              class="nav__link text text--small fast-slow-hover"
+              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">01</span>
               Menu
             </button>
           </li>
-          <li class="nav__item">
+          <li class="nav__item underline-hover">
             <button
               data-page="about"
               type="button"
-              class="nav__link text text--small fast-slow-hover"
+              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">02</span>
               About
@@ -77,7 +77,7 @@
         <nav class="nav nav--mobile">
           <div class="nav__top">
             <svg
-              class="nav__logo"
+              class="nav__logo icon icon--large"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 -960 960 960"
               fill="currentColor"
@@ -97,31 +97,31 @@
           </div>
 
           <ul class="nav__links text text--small">
-            <li class="nav__item">
+            <li class="nav__item underline-hover">
               <button
                 data-page="home"
                 type="button"
-                class="nav__link text text--small fast-slow-hover"
+                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">00</span>
                 Home
               </button>
             </li>
-            <li class="nav__item">
+            <li class="nav__item underline-hover">
               <button
                 data-page="menu"
                 type="button"
-                class="nav__link text text--small fast-slow-hover"
+                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">01</span>
                 Menu
               </button>
             </li>
-            <li class="nav__item">
+            <li class="nav__item underline-hover">
               <button
                 data-page="about"
                 type="button"
-                class="nav__link text text--small fast-slow-hover"
+                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">02</span>
                 About
@@ -139,7 +139,7 @@
             <h2 class="card__category text text--medium text--primary"></h2>
             <button
               type="button"
-              class="button button--menu"
+              class="icon icon--medium button"
               aria-label="more options"
             >
               <svg
@@ -166,7 +166,9 @@
             <p
               class="card__name text text--medium text--light text--primary"
             ></p>
-            <p class="text text--small text--regular text--secondary">
+            <p
+              class="card__footer text text--small text--primary text--uppercase text--regular text--regular"
+            >
               <span class="card__rating"></span
               ><span class="card__price"></span>
             </p>
@@ -175,84 +177,138 @@
       </div>
     </template>
     <template id="home-template">
-      <section class="container">
-        <h1>Welcome to E-Cafe</h1>
-        <button data-page="menu" class="container__link" type="button">
+      <section class="container container--flex">
+        <h1
+          class="flex-column text text--larger text__title text--primary text--bold"
+        >
+          <span class="text text--medium text--primary text--regular">
+            Welcome to
+          </span>
+          Date-Dinner
+        </h1>
+        <button
+          data-page="menu"
+          class="container__link button button--rectangle button--primary text text--regular text--medium"
+          type="button"
+        >
           View Menu
         </button>
 
-        <button data-page="about" class="container__link" type="button">
-          More about us
+        <button
+          data-page="about"
+          class="container__link button button--rectangle button--secondary text text--regular text--medium"
+          type="button"
+        >
+          More About Us
         </button>
-
-        <svg class="container__decoration"></svg>
-
-        <div class="container__sub-container">
-          <div class="card">
-            <img class="card__image" alt="" />
-            <div class="card__text-content">
-              <h2 class="card__title">Location</h2>
-              <p class="card__description">...</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" alt="" />
-            <div class="card__text-content">
-              <h2 class="card__title">Opening hours</h2>
-              <p class="card__description">...</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card__image" alt="" />
-            <div class="card__text-content">
-              <h2 class="card__title">Contact Us</h2>
-              <p class="card__description">...</p>
-            </div>
-          </div>
+      </section>
+    </template>
+    <template id="menu-template">
+      <section class="container container--flex">
+        <div class="container__header">
+          <h2
+            class="text__title text text--large text--primary text--uppercase"
+          >
+            <span>01</span>
+            Menu
+          </h2>
         </div>
+
+        <div class="container__sub-container"></div>
       </section>
     </template>
     <template id="about-template">
-      <section>
-        <div class="container__text-content">
-          <h2 class="text">Mission</h2>
-          <p class="text">...</p>
+      <section class="container container--flex">
+        <div class="container__header">
+          <h2
+            class="text__title text text--large text--primary text--uppercase"
+          >
+            <span>02</span>
+            About us
+          </h2>
         </div>
-        <div class="container__subcontainer">
-          <h2>Meet the team</h2>
 
-          <div class="card">
-            <div class="card__image"></div>
-            <div class="card__text-content">
-              <h2>Chef</h2>
-              <p>...</p>
+        <div class="container__sub-container">
+          <div class="container container--flex">
+            <div class="container__navigation">
+              <button
+                type="button"
+                class="button button--navigation"
+                id="back-btn"
+              >
+                <svg
+                  class="icon icon--small icon--bold"
+                  viewBox="0 0 14 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="icon__path"
+                    d="M13 0L1 12l12 12"
+                    stroke="currentColor"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                class="button button--navigation"
+                id="forward-btn"
+              >
+                <svg
+                  class="icon icon--small icon--bold"
+                  viewBox="0 0 14 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="icon__path"
+                    d="M1 0l12 12L1 24"
+                    stroke="currentColor"
+                    fill="none"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="container__image order-mobile-first order-desktop-last"
+            ></div>
+
+            <div class="container__text-content">
+              <h3
+                class="text--primary text--uppercase text text--medium"
+                id="role"
+              >
+                Chef
+              </h3>
+              <h3
+                class="text--primary text--uppercase text text--large"
+                id="name"
+              >
+                Antony
+              </h3>
+              <p
+                id="bio"
+                class="text__description text text--small text--primary"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit culpa
+                libero accusantium possimus autem sint nesciunt.
+              </p>
+              <div
+                class="container__indicators order-mobile-first order-desktop-last"
+              >
+                <div class="indicator"></div>
+
+                <div class="indicator"></div>
+
+                <div class="indicator"></div>
+
+                <div class="indicator"></div>
+
+                <div class="indicator"></div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card__image"></div>
-            <div class="card__text-content">
-              <h2>Assitant Cheft</h2>
-              <p>...</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image"></div>
-            <div class="card__text-content">
-              <h2>Waiter</h2>
-              <p>...</p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__image"></div>
-            <div class="card__text-content">
-              <h2>Cashier</h2>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-        <div class="container__text-content">
-          <h2 class="text">Values</h2>
-          <p class="text">...</p>
         </div>
       </section>
     </template>

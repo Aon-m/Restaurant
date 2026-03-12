@@ -1,0 +1,46 @@
+// Abstracts (variables, mixins, functions)
+@use "./abstracts/mixins" as m;
+@use "./abstracts/utilities";
+
+// Base / Reset
+@use "./base/reset";
+@use "./base/base";
+
+// Components
+@use "./components/animations";
+@use "./components/attribution";
+@use "./components/button";
+@use "./components/card";
+@use "./components/dialog";
+@use "./components/error";
+@use "./components/hidden-content";
+@use "./components/icon";
+@use "./components/indicators";
+@use "./components/list";
+@use "./components/newsletter";
+@use "./components/picture";
+@use "./components/text";
+
+// Layout
+@use "./layouts/container";
+@use "./layouts/footer";
+@use "./layouts/navigation-bar";
+
+body {
+  position: relative;
+
+  &::before {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/images/image-restuarant.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(0.7);
+  }
+}

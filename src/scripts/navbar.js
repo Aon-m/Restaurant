@@ -8,8 +8,9 @@ export default class NavBar {
     this.hamburger = document.querySelector(".nav__hamburger");
     this.closeBtn = document.querySelector(".nav__close-button");
     this.links = document.querySelectorAll(".nav__link");
+    this.items = document.querySelectorAll(".nav__item");
 
-    if (this.mobile && this.hamburger && this.closeBtn && this.links.length) {
+    if (this.mobile && this.hamburger && this.closeBtn && this.items.length) {
       this.init();
     }
   }
@@ -29,7 +30,14 @@ export default class NavBar {
     this.hamburger.addEventListener("click", () => this.open());
     this.closeBtn.addEventListener("click", () => this.close());
     this.links.forEach((btn) => {
-      btn.addEventListener("click", () => this.handlePage(btn));
+      btn.addEventListener("click", () => {
+        this.handlePage(btn);
+      });
+    });
+    this.items.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        this.style(btn);
+      });
     });
   }
 
@@ -56,5 +64,9 @@ export default class NavBar {
   close() {
     this.mobile.close();
     this.hamburger.focus();
+  }
+  style(item) {
+    this.items.forEach((i) => i.classList.remove("underline-hover--selected"));
+    item.classList.add("underline-hover--selected");
   }
 }
