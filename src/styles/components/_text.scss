@@ -1,6 +1,3 @@
-// @font-face {
-// }
-
 .text {
   text-align: center;
 
@@ -15,6 +12,9 @@
   }
 
   &--primary {
+    color: var(--color-accent-0);
+  }
+  &--secondary {
     color: var(--color-neutral-0);
   }
   &--tertiary {

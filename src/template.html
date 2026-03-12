@@ -44,7 +44,7 @@
             <button
               data-page="home"
               type="button"
-              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+              class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">00</span>
               Home
@@ -54,7 +54,7 @@
             <button
               data-page="menu"
               type="button"
-              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+              class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">01</span>
               Menu
@@ -64,7 +64,7 @@
             <button
               data-page="about"
               type="button"
-              class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+              class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
             >
               <span class="nav__index" aria-hidden="true">02</span>
               About
@@ -101,7 +101,7 @@
               <button
                 data-page="home"
                 type="button"
-                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+                class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">00</span>
                 Home
@@ -111,7 +111,7 @@
               <button
                 data-page="menu"
                 type="button"
-                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+                class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">01</span>
                 Menu
@@ -121,7 +121,7 @@
               <button
                 data-page="about"
                 type="button"
-                class="nav__link text text--small text--primary text--uppercase text--regular fast-slow-hover"
+                class="nav__link text text--small text--secondary text--uppercase text--regular fast-slow-hover"
               >
                 <span class="nav__index" aria-hidden="true">02</span>
                 About
@@ -136,7 +136,7 @@
       <div class="card">
         <div class="card__content">
           <div class="card__header">
-            <h2 class="card__category text text--medium text--primary"></h2>
+            <h2 class="card__category text text--medium text--secondary"></h2>
             <button
               type="button"
               class="icon icon--medium button"
@@ -164,10 +164,10 @@
           </picture>
           <div class="card__text-content">
             <p
-              class="card__name text text--medium text--light text--primary"
+              class="card__name text text--medium text--light text--secondary"
             ></p>
             <p
-              class="card__footer text text--small text--primary text--uppercase text--regular text--regular"
+              class="card__footer text text--small text--secondary text--uppercase text--regular text--regular"
             >
               <span class="card__rating"></span
               ><span class="card__price"></span>
@@ -181,7 +181,7 @@
         <h1
           class="flex-column text text--larger text__title text--primary text--bold"
         >
-          <span class="text text--medium text--primary text--regular">
+          <span class="text text--medium text--secondary text--regular">
             Welcome to
           </span>
           Date-Dinner
@@ -207,11 +207,26 @@
       <section class="container container--flex">
         <div class="container__header">
           <h2
-            class="text__title text text--large text--primary text--uppercase"
+            class="text__title text text--large text--secondary text--uppercase"
           >
             <span>01</span>
             Menu
           </h2>
+          <div class="container__input">
+            <select
+              class="input input--dropdown text text--secondary text--small text--bold"
+              name="category"
+              id="category-selector"
+            >
+              <option value="all">All</option>
+              <option value="Main Course">Main Course</option>
+              <option value="Appetizer">Appetizer</option>
+              <option value="Salad">Salad</option>
+              <option value="Dessert">Dessert</option>
+              <option value="Beverage">Beverage</option>
+              <option value="Light Meal">Light Meal</option>
+            </select>
+          </div>
         </div>
 
         <div class="container__sub-container"></div>
@@ -221,7 +236,7 @@
       <section class="container container--flex">
         <div class="container__header">
           <h2
-            class="text__title text text--large text--primary text--uppercase"
+            class="text__title text text--large text--secondary text--uppercase"
           >
             <span>02</span>
             About us
@@ -276,20 +291,20 @@
 
             <div class="container__text-content">
               <h3
-                class="text--primary text--uppercase text text--medium"
+                class="text--secondary text--uppercase text text--medium"
                 id="role"
               >
                 Chef
               </h3>
               <h3
-                class="text--primary text--uppercase text text--large"
+                class="text--secondary text--uppercase text text--large"
                 id="name"
               >
                 Antony
               </h3>
               <p
                 id="bio"
-                class="text__description text text--small text--primary"
+                class="text__description text text--small text--secondary"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit culpa
                 libero accusantium possimus autem sint nesciunt.

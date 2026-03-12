@@ -15,5 +15,12 @@ export default function loadMenu() {
 
   section.querySelector(".container__sub-container").appendChild(container);
 
+  const select = section.querySelector("select");
+  select.addEventListener("change", (e) => {
+    const value = e.target.value;
+
+    cardGenerator.filter(value);
+  });
+
   return section;
 }

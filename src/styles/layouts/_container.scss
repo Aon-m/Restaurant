@@ -19,6 +19,7 @@
   &__header {
     @include m.flex(column);
     width: 100%;
+    gap: var(--size-sm);
   }
   &__image {
     @include m.flex(column);
@@ -80,8 +81,10 @@
       flex-direction: row;
     }
     &__header {
+      flex-direction: row;
       align-items: flex-start;
-      padding-inline-start: var(--size-md);
+      padding-inline: var(--size-md);
+      justify-content: space-between;
     }
   }
 }

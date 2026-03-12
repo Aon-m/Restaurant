@@ -91,7 +91,7 @@ body {
 :root {
   /* Colors */
   /* Accent Colors */
-  --color-accent-0: hsl(330, 65%, 68%); /* pink */
+  --color-accent-0: hsl(330, 68%, 75%); /* pink */
   --color-accent-1: hsl(15, 80%, 70%); /* peach */
   --color-accent-2: hsl(85, 55%, 62%); /* lime */
   --color-accent-3: hsl(195, 55%, 60%); /* sky */
@@ -616,6 +616,9 @@ body {
   }
 }
 .text--primary {
+  color: var(--color-accent-0);
+}
+.text--secondary {
   color: var(--color-neutral-0);
 }
 .text--tertiary {
@@ -701,6 +704,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  gap: var(--size-sm);
 }
 .container__image {
   display: flex;
@@ -771,8 +775,10 @@ body {
     flex-direction: row;
   }
   .container__header {
+    flex-direction: row;
     align-items: flex-start;
-    padding-inline-start: var(--size-md);
+    padding-inline: var(--size-md);
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 60rem) {
@@ -1074,4 +1080,12 @@ body::before {
   background-size: cover;
   z-index: -1;
   filter: brightness(0.7);
+}
+
+.input {
+  padding: var(--size-xs);
+  border-radius: var(--size-sm);
+  width: clamp(10rem, 10rem + 0.5vw, 20rem);
+  cursor: pointer;
+  background-color: var(--color-accent-0);
 }

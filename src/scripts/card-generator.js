@@ -7,14 +7,11 @@ class CardGenerator {
     this.data;
     this.container = container;
     this.template = document.querySelector("#card-template");
-    // this.buttons = document.querySelectorAll(".filter");
-    // this.period = "all";
   }
 
   async init() {
     await this.getData();
     this.generateCards();
-    // this.onClick();
   }
 
   async getData() {
@@ -28,10 +25,21 @@ class CardGenerator {
     }
   }
 
-  generateCards() {
+  filter(criteria) {
+    const filtered =
+      criteria === "all"
+        ? this.data.menu
+        : this.data.menu.filter((item) => item.category === criteria);
+
+    this.generateCards(filtered);
+  }
+
+  generateCards(data = this.data.menu) {
+    this.container.innerHTML = "";
+
     const fragment = document.createDocumentFragment();
 
-    this.data.menu.forEach((item) => {
+    data.forEach((item) => {
       const card = this.createCard(item);
 
       fragment.append(card);
@@ -71,35 +79,6 @@ class CardGenerator {
 
     return clone;
   }
-
-  /* onClick() {
-    this.buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        this.select(button);
-
-        this.period = button.dataset.period;
-
-        this.container
-          .querySelectorAll(`.card:not(.card--wide)`)
-          .forEach((element) => {
-            element.remove();
-          });
-
-        this.generateCards();
-      });
-    });
-  } 
-
-  select(button) {
-    this.buttons.forEach((btn) => {
-      btn.classList.remove("time-frame--selected");
-      btn.setAttribute("aria-checked", "false");
-    });
-
-    button.classList.add("time-frame--selected");
-    button.setAttribute("aria-checked", "true");
-  }
-  */
 }
 
 export default CardGenerator;

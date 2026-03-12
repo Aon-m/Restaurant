@@ -44,3 +44,11 @@ body {
     filter: brightness(0.7);
   }
 }
+
+.input {
+  padding: var(--size-xs);
+  border-radius: var(--size-sm);
+  width: clamp(10rem, calc(10rem + 0.5vw), 20rem);
+  cursor: pointer;
+  background-color: var(--color-accent-0);
+}
