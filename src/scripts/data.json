@@ -173,27 +173,32 @@
     {
       "role": "Chef",
       "name": "Antony",
-      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit culpa libero accusantium possimus autem sint nesciunt."
+      "bio": "Lorem ipsum dolor sit amet consectetur adipisicing elit culpa libero accusantium possimus autem sint nesciunt.",
+      "image": "../assets/images/chef.png"
     },
     {
-      "role": "Assistant-Chef",
+      "role": "Assistant Chef",
       "name": "Mary",
-      "bio": "Inventore, veritatis, quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus."
+      "bio": "Inventore, veritatis, quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus.",
+      "image": "../assets/images/assistant-chef.png"
     },
     {
       "role": "Waiter 1",
       "name": "Timmy",
-      "bio": "Praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint illum."
+      "bio": "Praesentium illo, soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint illum.",
+      "image": "../assets/images/waiter-1.png"
     },
     {
       "role": "Waiter 2",
       "name": "Joe",
-      "bio": "Soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint nesciunt quam sequi? Ut, illum."
+      "bio": "Soluta beatae nisi aliquid molestiae culpa libero accusantium possimus autem sint nesciunt quam sequi? Ut, illum.",
+      "image": "../assets/images/waiter-2.png"
     },
     {
       "role": "Cashier",
       "name": "Dora",
-      "bio": "Consectetur adipisicing elit quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa."
+      "bio": "Consectetur adipisicing elit quae non praesentium illo, soluta beatae nisi aliquid molestiae culpa.",
+      "image": "../assets/images/cashier.png"
     }
   ]
 }

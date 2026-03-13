@@ -2,16 +2,26 @@
 
 .container {
   padding-block: var(--size-md);
-  width: 100%;
   position: relative;
+  margin-inline: auto;
+
+  &--wide {
+    width: 100%;
+  }
 
   &--flex {
-    @include m.flex(column);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: var(--size-md);
   }
+
   &--grid {
     display: grid;
-    grid-template-columns: min(80vw, 20rem);
+    grid-template-columns: repeat(
+      auto-fill,
+      clamp(20rem, calc(20rem + 1vw), 25rem)
+    );
     justify-content: center;
     gap: var(--size-sm);
   }
@@ -23,7 +33,6 @@
   }
   &__image {
     @include m.flex(column);
-    aspect-ratio: 1 / 1;
   }
 
   &__text-content {
@@ -69,10 +78,6 @@
   .container {
     padding: var(--size-sm) var(--size-lg) var(--size-xs);
 
-    &--grid {
-      grid-template-columns: repeat(2, clamp(15rem, calc(15rem + 1vw), 25rem));
-    }
-
     &__cards {
       flex-direction: row;
     }
@@ -91,16 +96,8 @@
 
 @media screen and (min-width: 60rem) {
   .container {
-    padding: 0;
-    opacity: 1;
-
-    &--grid {
-      grid-template-columns: repeat(3, clamp(15rem, calc(15rem + 1vw), 25rem));
-    }
-
     &__sub-container {
-      width: 100%;
-      opacity: 1;
+      min-width: 65%;
     }
 
     &__text-content {
@@ -116,17 +113,9 @@
       margin-inline-start: auto;
     }
     &__navigation {
-      width: 100%;
+      width: 120%;
       padding-inline: var(--size-md);
       max-width: 80rem;
-    }
-  }
-}
-
-@media screen and (min-width: 70rem) {
-  .container {
-    &--grid {
-      grid-template-columns: repeat(4, clamp(15rem, calc(15rem + 1vw), 25rem));
     }
   }
 }

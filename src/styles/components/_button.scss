@@ -36,12 +36,4 @@
       padding: var(--size-xs) calc(var(--size-sm) - 0.5rem);
     }
   }
-  &--circle {
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-  }
-
-  &--wide {
-    width: 100%;
-  }
 }

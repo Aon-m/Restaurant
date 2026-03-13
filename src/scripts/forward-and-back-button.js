@@ -59,7 +59,7 @@ const move = (function () {
 
     const indicator = indicators[currentIndex];
 
-      indicator.classList.add("indicator--selected");
+    indicator.classList.add("indicator--selected");
   }
 
   const render = (function () {
@@ -67,6 +67,8 @@ const move = (function () {
       document.getElementById("name").textContent = sectionData.name;
       document.getElementById("role").textContent = sectionData.role;
       document.getElementById("bio").textContent = sectionData.bio;
+      document.getElementById("image").src = sectionData.image;
+      document.getElementById("image").alt = `Image of the ${sectionData.role}`;
     }
 
     return {

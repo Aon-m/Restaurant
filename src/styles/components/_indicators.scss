@@ -4,6 +4,7 @@
   opacity: 0.5;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+  margin-block-end: var(--size-md);
 
   &--selected {
     opacity: 1;

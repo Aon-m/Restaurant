@@ -18,12 +18,6 @@
   --color-neutral-7: hsl(0, 0%, 12.5%);
   --color-neutral-8: hsl(0, 0%, 0%);
 
-  // Status colors
-  --color-success: hsl(100, 100%, 67%);
-  --color-warning: hsl(50, 100%, 67%);
-  --color-error: hsl(4, 100%, 67%);
-  --color-info: hsl(200, 100%, 67%);
-
   /* Spacing sizes */
   --size-xs: clamp(0.5rem, calc(0.35rem + 0.4vw), 1rem);
   --size-sm: clamp(1rem, calc(1.25rem + 0.5vw), 1.75rem);
@@ -37,15 +31,11 @@
   --fs-xl: clamp(4rem, calc(4rem + 3vw), 10rem);
 
   /* Font weights */
-  --fw-thin: 100;
-  --fw-xlight: 200;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  --fw-xbold: 800;
-  --fw-black: 900;
 
   /* Tablet and Desktop */
   @media screen and (min-width: 40rem) {

@@ -155,9 +155,9 @@
               </svg>
             </button>
           </div>
-          <picture class="card__image picture">
+          <picture class="card__image">
             <img
-              class="picture__img card__image"
+              class="picture__img"
               data-src="../assets/images/default.jpg"
               alt=""
             />
@@ -177,7 +177,7 @@
       </div>
     </template>
     <template id="home-template">
-      <section class="container container--flex">
+      <section class="container flex-column container--flex">
         <h1
           class="flex-column text text--larger text__title text--primary text--bold"
         >
@@ -204,7 +204,7 @@
       </section>
     </template>
     <template id="menu-template">
-      <section class="container container--flex">
+      <section class="container flex-column container--flex">
         <div class="container__header">
           <h2
             class="text__title text text--large text--secondary text--uppercase"
@@ -229,11 +229,11 @@
           </div>
         </div>
 
-        <div class="container__sub-container"></div>
+        <div class="container__sub-container container--wide"></div>
       </section>
     </template>
     <template id="about-template">
-      <section class="container container--flex">
+      <section class="container flex-column container--flex">
         <div class="container__header">
           <h2
             class="text__title text text--large text--secondary text--uppercase"
@@ -244,7 +244,7 @@
         </div>
 
         <div class="container__sub-container">
-          <div class="container container--flex">
+          <div class="container container--flex flex-mobile-column">
             <div class="container__navigation">
               <button
                 type="button"
@@ -285,9 +285,16 @@
                 </svg>
               </button>
             </div>
-            <div
-              class="container__image order-mobile-first order-desktop-last"
-            ></div>
+            <div class="container__image order-mobile-first order-desktop-last">
+              <picture class="picture picture--large">
+                <img
+                  class="picture__img"
+                  src="../assets/images/chef.png"
+                  alt="Image of the Chef"
+                  id="image"
+                />
+              </picture>
+            </div>
 
             <div class="container__text-content">
               <h3
