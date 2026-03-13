@@ -53,6 +53,7 @@ export default class NavBar {
 
     content.innerHTML = "";
     content.appendChild(routes[page]?.());
+    this.close();
   }
 
   open() {

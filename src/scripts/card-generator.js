@@ -69,11 +69,12 @@ class CardGenerator {
       cardRating = ratings[item.rating],
       cardImage = item.image,
       cardCategory = item.category;
+
     clone.querySelector(".card__name").textContent = cardName;
     clone.querySelector(".card__price").textContent = `$${cardPrice}`;
     clone.querySelector(".card__rating").textContent = cardRating;
     clone.querySelector(".card__image").src =
-      cardImage || "../assets/icons/icon-logo.svg";
+      /*  cardImage || */ "../assets/images/menu/default.jpg";
     clone.querySelector(".card__image").alt = cardName;
     clone.querySelector(".card__category").textContent = cardCategory;
 

@@ -7,10 +7,11 @@
   height: 100%;
 
   &__image {
-    @include m.flex(column);
     width: 100%;
-    height: auto;
+    border-radius: var(--size-sm);
     aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-block-start: var(--size-xs);
   }
 
   &__text-content {
