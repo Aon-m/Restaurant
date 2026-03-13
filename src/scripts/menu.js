@@ -8,6 +8,7 @@ export default function loadMenu() {
   const container = document.createElement("div");
   container.classList.add("container");
   container.classList.add("container--grid");
+  container.classList.add("container--wide");
 
   const cardGenerator = new CardGenerator(container);
 

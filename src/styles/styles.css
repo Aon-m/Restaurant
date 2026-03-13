@@ -414,7 +414,7 @@ body {
   margin-inline: auto;
 }
 .container--wide {
-  width: 100%;
+  width: 100vw;
 }
 .container--flex {
   display: flex;
