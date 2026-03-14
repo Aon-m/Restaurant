@@ -37,7 +37,6 @@ Users should be able to:
 
 ## Acknowledgments
 
-- The UI and game progression of the project was inspired by TheOnlyHamster's [TicTacToe](https://theonlyhamstertoh.github.io/tictactoe/) project on [The Odin Project](https://www.theodinproject.com/).
 - The Crew members featured on the cards are gotten from [BLTX](https://forums.tapas.io/t/character-reference-sheets-are-important-for-any-comic/67362)
 - The template for this README file was gotten from [Frontend Mentor](https://www.frontendmentor.io/)
 - The background image was gotten from [Pinterest](https://i.pinimg.com/originals/39/26/38/392638526d161a565a88f675fcfc701b.jpg)
